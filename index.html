@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="vieweport" content="width=device-width,initial-scale=1.0">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Rock Paper Scissors by Krishnika Goel</title>
         <link rel="stylesheet" href="style.css">
         
     </head>
     <body>
-            <p>Rock Paper Scissors</p>
-            <button onclick="game('Rock');" class="button">Rock</button>
-            <button onclick="game('Paper');" class="button">Paper</button>
-            <button onclick="game('Scissors');" class="button">Scissors</button>
+        <div class="container">
+            <p style="font-weight: bold;">Rock Paper Scissors</p>
+            <button onclick="game('Rock');" class="button"><img src="images/rock-emoji.png" alt="Rock" class="image"></button>
+            <button onclick="game('Paper');" class="button"><img src="images/paper-emoji.png" alt="Paper" class="image"></button>
+            <button onclick="game('Scissors');" class="button"><img src="images/scissors-emoji.png" alt="Scissors" class="image"></button>
+            <p class="js-move"></p>
+            <p class="js-who-won"></p>
+            <p class="js-score"></p>
+
+            <div>
+                <button onclick="reset()" class="reset">Reset Score</button>
+            </div>
             <script src="script.js"></script>
+        </div>    
     </body>
 </html>
